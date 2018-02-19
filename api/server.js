@@ -54,10 +54,12 @@ function Server(options) {
     console.log('ripple API connected.')
   })
   .catch(function(e) {
+    console.log('ripple API NOT connected.')
     console.log(e)
   })
 
   rippleAPI.on('error', function(errorCode, errorMessage, data) {
+    console.log('ripple API NOT had some problems.')
     console.log(errorCode, errorMessage, data)
   })
 

@@ -9,7 +9,7 @@ var gatewayList = require('../gateways/gateways.json');
 var fs = require('fs');
 var files = fs.readdirSync(assetPath);
 var assets = { };
-
+//01
 // prepare assets
 files.forEach(function(file) {
   var parts = file.split('.');

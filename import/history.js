@@ -8,6 +8,7 @@ var Promise  = require('bluebird');
 var moment   = require('moment');
 
 var GENESIS_LEDGER = 32570; // https://ripple.com/wiki/Genesis_ledger
+//var GENESIS_LEDGER = 1;
 var EPOCH_OFFSET   = 946684800;
 
 var HistoricalImport = function () {

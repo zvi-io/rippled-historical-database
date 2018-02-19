@@ -18,7 +18,7 @@ if [ "$1" = "restart" ] || [ "$1" = "start" ]; then
   mvn package
 
   echo "starting topology: '$TOPOLOGY'..."
-  storm jar target/importer-0.0.1-jar-with-dependencies.jar ripple.importer.ImportTopology "ripple-ledger-importer"
-
+##  storm jar target/importer-0.0.1-jar-with-dependencies.jar ripple.importer.ImportTopology "ripple-ledger-importer"
+storm jar target/importer-0.0.1.jar ripple.importer.ImportTopology "ripple-ledger-importer"
   echo "'$TOPOLOGY' started"
 fi
